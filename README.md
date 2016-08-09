@@ -1,1 +1,3 @@
-# sketch-pad
+## Javascript/jQuery project: sketch-pad
+
+[Project link.](http://www.theodinproject.com/web-development-101/javascript-and-jquery)
