@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function createGrid() {
-    var gridSize = prompt("How big do you want the grid to be?");
+    var gridSize = prompt("How big do you want the grid to be? Entering for example '60' will make a 60x60 grid.");
     
     if (isNaN(gridSize)) {
         alert("You need to enter a number.");
@@ -49,7 +49,7 @@ function showBorder() {
     var border = $("input[type=checkbox]").is(":checked");
 
     if (border === true) {
-        $("#container > div").css("outline", "1px solid black");
+        $("#container > div").css("outline", "1px solid #F0F0F0");
     } else {
         $("#container > div").css("outline", "none");
     }
