@@ -1,26 +1,49 @@
 #wrapper {
     margin: 15px auto;
-    border: 1px solid blue;
+    border: 1px solid #cdcbcb;
     width: 960px;
 }
 
 button {
+    margin: 5px 30px;
+    height: 25px;
+    width: 80px;
     display: inline-block;
-    margin: 10px 30px;
+    background-color: #F0F0F0;
+    color: #000c1a;
+    border: 1px solid #cdcbcb;
 }
 
 form {
-    margin: 10px 30px;
+    margin: 5px 0px;
     display: inline-block;
 }
 
+select {
+    margin: 5px 30px;
+    height: 25px;
+    width: 100px;
+    background-color: #F0F0F0;
+    color: #000c1a;
+    border: 1px solid #cdcbcb;    
+}
+
 input { 
-    padding: 10px 30px;
+    background-color: #F0F0F0;
+    color: #000c1a;
+    border: 1px solid #cdcbcb;
+}
+
+label {
+    font-family: Arial;
+    font-size: 15px;
+    color: #000c1a;
+    
 }
 
 #container {
     margin: 30px auto;
-    outline: 1px solid red;
+    outline: 2px solid #cdcbcb;
     visibility: hidden;
     height: 960px;
     width: 960px;  

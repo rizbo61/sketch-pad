@@ -5,6 +5,8 @@ $(document).ready(function() {
 });
 
 function createGrid() {
+    $("#container > div").remove();
+
     var gridSize = prompt("How big do you want the grid to be? Entering for example '60' will make a 60x60 grid.");
     
     if (isNaN(gridSize)) {
@@ -56,15 +58,14 @@ function showBorder() {
 }
 
 $("#container").click(function() {
-   alert($("#container > div").length);
+   alert($("#container > div").length + " boxes.");
 });
 
 $("#clear-grid").click(function() {
-    $("#container > div").css("background-color", "transparent");
+    hover();
 });
 
 $("#new-grid").click(function() {
-    $("#container > div").remove();
     createGrid();
     hover();
     showBorder();
