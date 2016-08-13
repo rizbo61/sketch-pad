@@ -60,7 +60,7 @@ $("#container").click(function() {
 });
 
 $("#clear-grid").click(function() {
-    $("#container > div").removeClass();
+    $("#container > div").css("background-color", "transparent");
 });
 
 $("#new-grid").click(function() {
