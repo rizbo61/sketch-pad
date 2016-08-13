@@ -1,0 +1,39 @@
+#wrapper {
+    margin: 15px auto;
+    border: 1px solid blue;
+    width: 960px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+form {
+    margin: 10px 30px;
+    display: inline-block;
+}
+
+input { 
+    padding: 10px 30px;
+}
+
+#container {
+    margin: 30px auto;
+    outline: 1px solid red;
+    visibility: hidden;
+    height: 960px;
+    width: 960px;  
+}
+
+#container > div {
+    display: inline-block; 
+}
+
+.hovered {
+    background-color: black;
+}
+
+.colored {
+    
+}
