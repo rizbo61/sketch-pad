@@ -41,6 +41,8 @@ function hover() {
             e.preventDefault();
             if (e.which === 1) {
                 $(this).css("background-color", "black");
+            } else if (e.which === 2) {
+                $(this).css("background-color", "white");
             }
         });
     }   else if (selectedColor === "colored") {
@@ -48,6 +50,8 @@ function hover() {
                 e.preventDefault();
                 if (e.which === 1) {
                     $(this).css("background-color", randomColor);
+                } else if (e.which === 2) {
+                    $(this).css("background-color", "white");
                 }
             });
         }
