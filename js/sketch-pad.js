@@ -32,34 +32,42 @@ function hover() {
 
     var randomColor = function rgb() {
     return '#'+Math.floor(Math.random()*16777215).toString(16);
-    }
+    };
 
     var selectedColor = $("select[name=color]").val(); 
 
     if (selectedColor === "black-white") {
-         $("#container > div").mouseenter(function() {
-             $(this).css("background-color", "black");    
-         });
-    } else if (selectedColor === "colored") {
-        $("#container > div").mouseenter(function() {
-            $(this).css("background-color", randomColor);
+        $("#container > div").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "black");
+            }
         });
-    }
+    }   else if (selectedColor === "colored") {
+            $("#container > div").on("mousedown mouseover", function(e){
+                e.preventDefault();
+                if (e.which === 1) {
+                    $(this).css("background-color", randomColor);
+                }
+            });
+        }
 }
 
 function showBorder() {
     var border = $("input[type=checkbox]").is(":checked");
 
     if (border === true) {
-        $("#container > div").css("outline", "1px solid #F0F0F0");
+       /*$("#container > div").css({"outline": "1px solid", "transition-property": "outline-color", "transition-duration": ".5s", "outline-color": "#F0F0F0"});*/
+       $("#container > div").css("outline", "1px solid #F0F0F0");
     } else {
-        $("#container > div").css("outline", "none");
+        /*$("#container > div").css({"transition-property": "outline-color", "transition-duration": ".5s", "outline-color": "transparent"});*/
+        $("#container > div").css("outline", "transparent");
     }
 }
 
-$("#container").click(function() {
+/*$("#container").click(function() {
    alert($("#container > div").length + " boxes.");
-});
+});*/
 
 $("#clear-grid").click(function() {
     hover();

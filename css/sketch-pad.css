@@ -1,4 +1,5 @@
 #wrapper {
+    background-color: #ffffff;
     margin: 15px auto;
     border: 1px solid #cdcbcb;
     width: 960px;
@@ -42,6 +43,7 @@ label {
 }
 
 #container {
+    background-color: #ffffff;
     margin: 30px auto;
     outline: 2px solid #cdcbcb;
     visibility: hidden;
@@ -51,5 +53,6 @@ label {
 
 #container > div {
     display: inline-block; 
-    transition: all 0.4s ease-in-out;
+    outline: 1px solid #F0F0F0;
+    transition: all .25s ease-in-out;
 }
