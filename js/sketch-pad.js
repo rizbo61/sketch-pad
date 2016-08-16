@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    createGrid();
-    hover();
+    /*createGrid();*/
+    paintGrid();
     showBorder();
 });
 
 function createGrid() {
-    $("#container > div").remove();
+    $(".grid").remove();
 
     var gridSize = prompt("How big do you want the grid to be? Entering for example '60' will make a 60x60 grid.");
     
@@ -18,76 +18,239 @@ function createGrid() {
     var count = 0;
     
     while (count < (gridSize * gridSize)) {  
-         $("#container").append("<div></div>");
+         $("#container").append('<div class="grid"></div>');
          count++;
     } 
     
-    $("#container > div").height(boxSize).width(boxSize);
+    $(".grid").height(boxSize).width(boxSize);
+    $("#container").height(boxSize * gridSize).width(boxSize * gridSize);
 
     $("#container").css("visibility", "visible").hide().fadeIn(2000);
 }
 
-function hover() {
-    $("#container > div").css("background-color", "transparent");
-
+function paintGrid() {
     var randomColor = function rgb() {
     return '#'+Math.floor(Math.random()*16777215).toString(16);
     };
 
-    var selectedColor = $("select[name=color]").val(); 
+    var selectedColor = $("#color").val(); 
 
-    if (selectedColor === "black-white") {
-        $("#container > div").on("mousedown mouseover", function(e){
+    switch (selectedColor) {
+        case "black":
+        $(".grid").on("mousedown mouseover", function(e){
             e.preventDefault();
             if (e.which === 1) {
                 $(this).css("background-color", "black");
-            } else if (e.which === 2) {
-                $(this).css("background-color", "white");
-            }
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
         });
-    }   else if (selectedColor === "colored") {
-            $("#container > div").on("mousedown mouseover", function(e){
+        break;
+        case "silver":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "silver");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "gray":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "gray");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "maroon":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "maroon");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "red":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "red");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "purple":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "purple");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "fuchsia":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "fuchsia");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "green":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "green");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "lime":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "lime");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "olive":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "olive");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "yellow":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "yellow");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "navy":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "navy");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "blue":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "blue");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "teal":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "teal");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "aqua":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "aqua");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "orange":
+        $(".grid").on("mousedown mouseover", function(e){
+            e.preventDefault();
+            if (e.which === 1) {
+                $(this).css("background-color", "orange");
+            }   else if (e.which === 2) {
+                    $(this).css("background-color", "#fff");
+                }
+        });
+        break;
+        case "random":
+            $(".grid").on("mousedown mouseover", function(e){
                 e.preventDefault();
+                $(this).css("transition", "all .25s ease-in-out");
                 if (e.which === 1) {
                     $(this).css("background-color", randomColor);
-                } else if (e.which === 2) {
-                    $(this).css("background-color", "white");
-                }
+                }   else if (e.which === 2) {
+                        $(this).css("background-color", "#fff");
+                    }
             });
-        }
-}
-
-function showBorder() {
-    var border = $("input[type=checkbox]").is(":checked");
-
-    if (border === true) {
-       /*$("#container > div").css({"outline": "1px solid", "transition-property": "outline-color", "transition-duration": ".5s", "outline-color": "#F0F0F0"});*/
-       $("#container > div").css("outline", "1px solid #F0F0F0");
-    } else {
-        /*$("#container > div").css({"transition-property": "outline-color", "transition-duration": ".5s", "outline-color": "transparent"});*/
-        $("#container > div").css("outline", "transparent");
+        break;
+        default:
     }
 }
 
-/*$("#container").click(function() {
-   alert($("#container > div").length + " boxes.");
-});*/
+function showBorder() {
+    var border = $("#border").is(":checked");
 
-$("#clear-grid").click(function() {
-    hover();
+    if (border === true) {
+       $(".grid").css({
+           "outline": "1px solid",
+           "transition": "background-color .5s, outline-color .5s",
+           "outline-color": "#F0F0F0"
+        });
+    } else {
+        $(".grid").css({
+            "transition": "background-color .5s, outline-color .5s",
+            "outline-color": "transparent"
+        });
+    }
+}
+
+
+$("button, #color, #border").hover(function() {
+    $(this).css("box-shadow", "0px 0px 2px 2px #F0F0F0");
+}, function() {
+    $(this).css("box-shadow", "");
 });
 
 $("#new-grid").click(function() {
     createGrid();
-    hover();
+    paintGrid();
     showBorder();
 });
 
-$("select[name=color]").change(function() {
-    hover();
+$("#clear-grid").click(function() {
+    $(".grid").css("background-color", "transparent");
+    paintGrid();
 });
 
-$("input[type=checkbox]").change(function() {
+$("#color").change(function() {
+    paintGrid();
+});
+
+$("#border").change(function() {
     showBorder();
 });
 

@@ -6,22 +6,36 @@
     </head>
     <body>
         <div id="wrapper">
-            <button id="clear-grid">Clear grid</button>
             <button id="new-grid">New grid</button>
+            <button id="clear-grid">Clear grid</button>
             <form>
-                <select name="color">
-                    <option value="black-white">Black/White</option>
-                    <option value="colored">Colored</option>
+                <select id="color">
+                    <option value="black">Black</option>
+                    <option value="silver">Silver</option>
+                    <option value="gray">Gray</option>
+                    <option value="maroon">Maroon</option>
+                    <option value="red">Red</option>
+                    <option value="purple">Purple</option>
+                    <option value="fuchsia">Fuchsia</option>
+                    <option value="green">Green</option>
+                    <option value="lime">Lime</option>
+                    <option value="olive">Olive</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="navy">Navy</option>
+                    <option value="blue">Blue</option>
+                    <option value="teal">Teal</option>
+                    <option value="aqua">Aqua</option>
+                    <option value="orange">Orange</option>
+                    <option value="random">Random</option>
                 </select>
-                <input type="checkbox" id="borders" checked>
-                <label for="borders">Borders (on/off)</label>
+                <input type="checkbox" id="border" checked>
+                <label for="border">Borders (on/off)</label>
             </form>
         </div>
 
         <div id="container">
             
         </div>
-
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="js/sketch-pad.js"></script>
     </body>
