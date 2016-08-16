@@ -217,12 +217,12 @@ function showBorder() {
     if (border === true) {
        $(".grid").css({
            "outline": "1px solid",
-           "transition": "background-color .5s, outline-color .5s",
+           "transition": "background-color .25s, outline-color .5s",
            "outline-color": "#F0F0F0"
         });
     } else {
         $(".grid").css({
-            "transition": "background-color .5s, outline-color .5s",
+            "transition": "background-color .25s, outline-color .5s",
             "outline-color": "transparent"
         });
     }
