@@ -42,7 +42,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "black");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -52,7 +52,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "silver");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -62,7 +62,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "gray");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -72,7 +72,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "maroon");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -82,7 +82,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "red");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -92,7 +92,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "purple");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -102,7 +102,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "fuchsia");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -112,7 +112,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "green");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -122,7 +122,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "lime");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -132,7 +132,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "olive");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -142,7 +142,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "yellow");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -152,7 +152,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "navy");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -162,7 +162,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "blue");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -172,7 +172,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "teal");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -182,7 +182,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "aqua");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -192,7 +192,7 @@ function paintGrid() {
             if (e.which === 1) {
                 $(this).css("background-color", "orange");
             }   else if (e.which === 2) {
-                    $(this).css("background-color", "#fff");
+                    $(this).css("background-color", "transparent");
                 }
         });
         break;
@@ -203,7 +203,7 @@ function paintGrid() {
                 if (e.which === 1) {
                     $(this).css("background-color", randomColor);
                 }   else if (e.which === 2) {
-                        $(this).css("background-color", "#fff");
+                        $(this).css("background-color", "transparent");
                     }
             });
         break;
